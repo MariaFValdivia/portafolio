@@ -1,0 +1,41 @@
+/*Colores*/
+/*Fonts*/
+* {
+  margin: 0%;
+  padding: 0%;
+  align-items: center;
+}
+
+body {
+  background-image: url("./Images/gradiente.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  background-color: #f8edeb;
+  font-family: "Liter", serif;
+  width: 100%;
+  height: min-content;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  text-decoration-line: none;
+  list-style: none;
+  padding: 20px;
+}
+nav li {
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+  text-decoration-line: none;
+  text-emphasis-color: none;
+  color: #9d8189;
+  size: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
