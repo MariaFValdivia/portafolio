@@ -1,0 +1,108 @@
+/*Colores Fondos*/
+/*Colores texto*/
+/*Hover*/
+/*Sombras*/
+/*Bordes*/
+/*Fonts*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./Images/gradiente.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Navbar*/
+nav {
+  display: flex;
+  background-color: rgba(248, 237, 235, 0.5058823529);
+  font-family: "Liter", serif;
+  width: 100%;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1019607843);
+  align-items: flex-end;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #9d8189;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+nav a:hover {
+  background-color: #f5dfeb;
+  color: #664a52;
+}
+nav a.active {
+  background-color: #f5e4e9;
+  color: #664a52;
+}
+@media (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/*Main*/
+.saludo {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  width: 300px;
+}
+
+#hola {
+  background-image: url("../Images/ventanHorizontalSombra.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 50vh;
+  position: absolute;
+  right: 500px;
+}
+
+#bienvenida {
+  background-image: url("../Images/ventanaVerticalSombra.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+#bienvenida h2 {
+  color: #d13bd1;
+  font-family: "Silkscreen", serif;
+  font-size: 4.5rem;
+  text-align: justify;
+  text-shadow: rgba(165, 121, 159, 0.5607843137) 0 4px 6px;
+  width: 500px;
+  height: 50vh;
+  margin-left: -150px;
+  margin-top: 170px;
+}/*# sourceMappingURL=styles.css.map */
