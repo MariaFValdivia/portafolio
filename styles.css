@@ -1,41 +1,146 @@
-/*Colores*/
+/*Colores Fondos*/
+/*Colores texto*/
+/*Hover*/
+/*Sombras*/
+/*Bordes*/
 /*Fonts*/
 * {
-  margin: 0%;
-  padding: 0%;
-  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-image: url("./Images/gradiente.avif");
+  background-image: url("./Images/gradiente.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
+/*Navbar*/
 nav {
   display: flex;
-  background-color: #f8edeb;
+  background-color: rgba(248, 237, 235, 0.5058823529);
   font-family: "Liter", serif;
   width: 100%;
   height: min-content;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1019607843);
+  align-items: flex-end;
 }
 nav ul {
   display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  text-decoration-line: none;
   list-style: none;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  align-items: flex-end;
 }
 nav li {
-  text-decoration: none;
+  margin: 0 15px;
 }
 nav a {
   text-decoration: none;
-  text-decoration-line: none;
-  text-emphasis-color: none;
   color: #9d8189;
-  size: 20px;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+nav a:hover {
+  background-color: #f5dfeb;
+  color: #664a52;
+}
+nav a.active {
+  background-color: #f5e4e9;
+  color: #664a52;
+}
+@media (max-width: 768px) {
+  nav .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/*Main*/
+.saludo {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  width: 300px;
+}
+
+#hola {
+  background-image: url("../Images/ventanHorizontalSombra.png");
+  background-size: 110% 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 550px;
+  bottom: 520px;
+  z-index: 1;
+  overflow: hidden;
+}
+#hola h1 {
+  color: rgb(156, 118, 156);
+  font-family: "Poppins", serif;
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: rgba(165, 121, 159, 0.5607843137) 0 4px 6px;
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+}
+
+#bienvenida {
+  background-image: url("../Images/ventanaVerticalSombra.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1000px;
+  height: 800px;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+#bienvenida h2 {
+  color: rgb(156, 118, 156);
+  font-family: "Poppins", serif;
+  font-size: 3.6rem;
+  text-align: center;
+  text-shadow: rgba(165, 121, 159, 0.5607843137) 0 4px 6px;
+  width: 380px;
+  height: 50vh;
+  margin-left: -100px;
+  margin-top: 100px;
+}
+
+/*Footer*/
+footer {
+  background-color: rgba(248, 237, 235, 0.5058823529);
+  font-family: "Liter", serif;
+  width: 100%;
+  height: min-content;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1019607843);
+  display: flex;
+}
+footer img {
+  height: 80px;
+  width: 80px;
+}
+footer p {
+  color: #664a52;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
